@@ -1,5 +1,5 @@
 # Site Settings
-title: "mmtalavera.github.io"
+title: "Tus Pasos Seguros"
 description: "Personal website and blog"
 author: "chrux"
 baseurl: "" # Leave empty for user/organization sites
@@ -8,8 +8,10 @@ url: "https://mmtalavera.github.io"
 # Build Settings
 markdown: kramdown
 highlighter: rouge
-theme: minima
 permalink: /:year/:month/:day/:title/
+
+sass:
+  sass_dir: _sass
 
 # GitHub Pages Settings
 safe: true
