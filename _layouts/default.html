@@ -57,12 +57,10 @@
 								<h3>{{ service.name }}</h3>
 								<p>{{ service.description }}</p>
 								{% if service.benefits %}
-								<p><strong>Beneficios</strong></p>
-								<ul>
-									{% for benefit in service.benefits %}
-									<li>{{ benefit }}</li>
-									{% endfor %}
-								</ul>
+								<p><strong>Beneficios</strong>: {{ service.benefits }}</p>
+								{% endif %}
+								{% if service.best_for %}
+								<p><strong>Ideal para</strong>: {{ service.best_for }}</p>
 								{% endif %}
 							</section>
 						</div>
