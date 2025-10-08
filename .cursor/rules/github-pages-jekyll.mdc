@@ -1,0 +1,129 @@
+---
+alwaysApply: true
+---
+
+# Jekyll Best Practices and Coding Standards
+
+## Project Structure
+Follow the standard Jekyll directory structure:
+```
+.
+├── _config.yml          # Site configuration
+├── _data/               # Data files (YAML, JSON, CSV)
+├── _drafts/             # Unpublished posts
+├── _includes/           # Reusable components
+├── _layouts/            # Page templates
+├── _posts/              # Blog posts (YYYY-MM-DD-title.md)
+├── _sass/               # Sass partials
+├── _site/               # Generated site (ignored by git)
+├── assets/              # CSS, JS, images
+├── _pages/              # Static pages
+├── index.html           # Homepage
+├── Gemfile              # Ruby dependencies
+├── .gitignore           # Git ignore rules
+└── README.md            # Project documentation
+```
+
+## Core Principles
+- **Static First**: Jekyll transforms Markdown, Liquid, HTML & CSS into static sites
+- **Content-Driven**: Focus on content, not complex databases or updates
+- **Blog-Aware**: Built-in support for permalinks, categories, pages, posts, and layouts
+- **GitHub Pages Ready**: Optimized for free hosting on GitHub Pages
+
+## File Naming Conventions
+- **Posts**: `YYYY-MM-DD-title.md` in `_posts/` directory
+- **Pages**: `title.md` or `title/index.md` for clean URLs
+- **Drafts**: `title.md` in `_drafts/` directory
+- **Data Files**: `.yml`, `.yaml`, `.json`, or `.csv` in `_data/`
+- **Includes**: `_component-name.html` in `_includes/`
+- **Layouts**: `layout-name.html` in `_layouts/`
+
+## Front Matter Standards
+Always include proper front matter in posts and pages:
+```yaml
+---
+layout: post
+title: "Post Title"
+date: 2024-01-01 12:00:00 -0000
+categories: [category1, category2]
+tags: [tag1, tag2]
+author: Author Name
+---
+```
+
+## Liquid Template Best Practices
+- Use `{{ content }}` for page content
+- Use `{{ site.title }}` for site-wide variables
+- Use `{% for post in site.posts %}` for post loops
+- Use `{% include component.html %}` for reusable components
+- Use `{% assign variable = value %}` for variable assignment
+
+## Asset Management
+- Place CSS in `assets/css/` or `_sass/`
+- Place JavaScript in `assets/js/`
+- Place images in `assets/images/`
+- Use `{{ site.baseurl }}{{ '/assets/image.jpg' | relative_url }}` for asset URLs
+- Optimize images before adding to repository
+
+## Configuration (_config.yml)
+Essential configuration settings:
+```yaml
+title: "Site Title"
+description: "Site description"
+baseurl: "" # for GitHub Pages: "/repository-name"
+url: "https://username.github.io" # or custom domain
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima # or custom theme
+
+# Collections
+collections:
+  - name: "collection-name"
+    output: true
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+```
+
+## GitHub Pages Integration
+- Use `github-pages` gem in Gemfile
+- Configure `baseurl` for repository-based sites
+- Use `relative_url` filter for internal links
+- Test locally with `bundle exec jekyll serve`
+- Deploy automatically on push to main branch
+
+## Performance Optimization
+- Minimize external dependencies
+- Use Jekyll's built-in Sass compilation
+- Optimize images and use appropriate formats
+- Leverage Jekyll's incremental builds
+- Use `jekyll-sitemap` for SEO
+
+## Security Best Practices
+- Never commit sensitive data to repository
+- Use environment variables for API keys
+- Validate user input in forms
+- Keep dependencies updated
+- Use HTTPS for custom domains
+
+## Development Workflow
+1. Create feature branch
+2. Make changes locally
+3. Test with `bundle exec jekyll serve`
+4. Commit and push changes
+5. Create pull request
+6. Merge to main for automatic deployment
+
+## Common Patterns
+- Use `{% raw %}{% endraw %}` to escape Liquid syntax
+- Use `{% comment %}{% endcomment %}` for comments
+- Use `{% unless condition %}{% endunless %}` for negative conditions
+- Use `{% if condition %}{% elsif %}{% else %}{% endif %}` for conditionals
+

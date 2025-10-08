@@ -1,0 +1,40 @@
+# Site Settings
+title: "Tus Pasos Seguros"
+description: "Personal website and blog"
+author: "chrux"
+baseurl: "" # Leave empty for user/organization sites
+url: "https://mmtalavera.github.io"
+
+# Build Settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:year/:month/:day/:title/
+
+sass:
+  sass_dir: _sass
+
+# GitHub Pages Settings
+safe: true
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Exclude files from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - .cursor/
+  # Temporary comment this for development
+  # - template/
+  - .qodo/
+  - .vscode/
+  - .gitignore
+
+# Social Media Links
+github_username: mmtalavera
+
+# Development Settings
+future: false
+show_drafts: false

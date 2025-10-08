@@ -1,0 +1,26 @@
+h1.name {
+    line-height: 0.8em;
+}
+
+.service {
+    .box {
+        position: relative;
+        overflow: hidden;
+        .extra {
+            display: none;
+            overflow-y: auto;
+            position: absolute;
+            background-color: #fff;
+            left:0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            padding: 10px;
+        }
+        &:hover {
+            .extra {
+                display: block;
+            }
+        }
+    }
+}
