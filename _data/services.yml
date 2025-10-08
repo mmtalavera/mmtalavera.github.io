@@ -5,9 +5,8 @@
   description: Un día vas a dejar de trabajar, tus ingresos no tienen por qué detenerse.
 - name: Seguro Educativo (Ahorro para hijos)
   description: Convertí tu amor en oportunidades reales.
-  benefits:
-  - fondo para universidad/colegio, metas por etapas, tranquilidad financiera.
-  - Ideal para: familias con niños desde 0 a 15 años.
+  benefits: fondo para universidad/colegio, metas por etapas, tranquilidad financiera.
+  best_for: familias con niños desde 0 a 15 años.
 - name: Salud y Gastos Médicos
   description: Para que una urgencia no comprometa tus finanzas.
   image: assets/images/services/seguro de salud.jpg

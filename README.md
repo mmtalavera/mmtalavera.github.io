@@ -57,10 +57,14 @@ Contiene la información de los servicios ofrecidos. Estructura:
 - name: Nombre del Servicio
   description: Descripción del servicio
   image: assets/images/services/imagen.jpg
-  benefits:
-    - Beneficio 1
-    - Beneficio 2
+  benefits: Lista de beneficios separados por comas
+  best_for: Público objetivo o ideal para
 ```
+
+**Campos opcionales:**
+- `image`: Ruta a la imagen del servicio
+- `benefits`: Texto con los beneficios del servicio
+- `best_for`: Descripción del público objetivo
 
 **Imágenes:** Las imágenes de servicios deben ubicarse en `assets/images/services/` utilizando rutas relativas para compatibilidad con GitHub Pages.
 
