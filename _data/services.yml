@@ -1,0 +1,20 @@
+- name: Seguro de Vida
+  description: Para cuidar a tu familia cuando no estés.
+  image: assets/images/services/seguro de vida.jpg
+- name: Retiro / Jubilación
+  description: Un día vas a dejar de trabajar, tus ingresos no tienen por qué detenerse.
+- name: Seguro Educativo (Ahorro para hijos)
+  description: Convertí tu amor en oportunidades reales.
+  benefits:
+  - fondo para universidad/colegio, metas por etapas, tranquilidad financiera.
+  - Ideal para: familias con niños desde 0 a 15 años.
+- name: Salud y Gastos Médicos
+  description: Para que una urgencia no comprometa tus finanzas.
+  image: assets/images/services/seguro de salud.jpg
+- name: Ahorro e Inversión
+  description: Hacé crecer tu dinero mientras vivís la vida.
+  image: assets/images/services/inversiones.jpg
+- name: Seguro Viajero
+  description: Protegé tu viaje desde el primer día, estés donde estés.
+- name: Seguro de Incapacidad
+  description: Si no podés trabajar, tus ingresos no deberían detenerse.
