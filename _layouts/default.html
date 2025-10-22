@@ -64,7 +64,15 @@
 									<p><strong>Ideal para</strong>: {{ service.best_for }}</p>
 									{% endif %}
 									{% if service.companies %}
-									<p><strong>Compañías:</strong>: {{ service.companies | join: ", " }}</p>
+									<p><strong>Compañías:</strong></p>
+									<p>
+										{% for company_name in service.companies %}
+										{% assign company = site.data.companies | where: "name", company_name | first %}
+										{% if company and company.image %}
+										<a href="{{ company.url }}" target="_blank"><img src="{{ company.image | relative_url }}" alt="{{ company.name }}" height="60" /></a>
+										{% endif %}
+										{% endfor %}
+									</p>
 									{% endif %}
 								</div>
 							</section>
