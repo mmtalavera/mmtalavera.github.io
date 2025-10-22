@@ -9,6 +9,7 @@
   - Olé
 - name: Retiro / Jubilación
   description: Un día vas a dejar de trabajar, tus ingresos no tienen por qué detenerse.
+  image: assets/images/services/retiro.jpg
   benefits: ahorro con interés compuesto, disciplina automática, opciones de rescate. 
   best_for: 25–55 años que quieren complementar su jubilación.
   companies:
@@ -16,6 +17,7 @@
   - Investor Trust
 - name: Seguro Educativo (Ahorro para hijos)
   description: Convertí tu amor en oportunidades reales.
+  image: assets/images/services/seguro educativo.jpg
   benefits: fondo para universidad/colegio, metas por etapas, tranquilidad financiera.
   best_for: familias con niños desde 0 a 15 años.
   companies:
@@ -39,12 +41,14 @@
   - Investor Trust
 - name: Seguro Viajero
   description: Protegé tu viaje desde el primer día, estés donde estés.
+  image: assets/images/services/seguro viajero.jpg
   benefits: Cobertura médica internacional. / Asistencia en casos de pérdida de equipaje o retrasos. / Apoyo 24/7 durante tu viaje.
   best_for: personas que viajan por trabajo, estudios o vacaciones.
   companies:
   - BMI
 - name: Seguro de Incapacidad
   description: Si no podés trabajar, tus ingresos no deberían detenerse.
+  image: assets/images/services/incapacidad.jpg
   benefits: Reemplazo parcial o total de ingresos en caso de accidente o enfermedad. / Protección de estilo de vida y compromisos financieros / Planes adaptados según tu ocupación y nivel de riesgo.
   best_for: trabajadores independientes, profesionales y cabezas de familia.
   companies:
