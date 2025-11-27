@@ -38,3 +38,5 @@ github_username: mmtalavera
 # Development Settings
 future: false
 show_drafts: false
+
+excerpt_separator: <!--more-->

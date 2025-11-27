@@ -1,3 +1,86 @@
 ---
-layout: default
+layout: layout
 ---
+
+<!-- Home -->
+<article id="top" class="wrapper style1">
+    <div class="container">
+        <div class="row">
+            <div class="col-4 col-5-large col-12-medium">
+                <span class="image fit"><img src="{{ "assets/images/profile.jpg" | relative_url }}" alt="" /></span>
+            </div>
+            <div class="col-8 col-7-large col-12-medium">
+                <header>
+                    <h1 class="name">Hola, Soy <strong>{{ site.data.profile.name }}</strong>.</h1>
+                </header>
+                <p>Te ayudo a proteger lo más valioso: <strong>tu vida</strong>, <strong>tu familia</strong> y <strong>tu tranquilidad</strong>.</p>
+                <a href="#contacto" class="button large scrolly">Agendá una asesoría gratuita</a>
+            </div>
+        </div>
+    </div>
+</article>
+
+<article id="servicios" class="wrapper style2">
+    <div class="container">
+        <header>
+            <h2>Servicios</h2>
+            <p>Todos los planes son personalizados, cada persona es única y tenemos necesidades diferentes, asi que dime cual es tu necesidad y te diré que es lo que necesitas.</p>
+        </header>
+        <div class="row">
+            {% for service in site.data.services %}
+            <div class="col-4 col-6-medium col-12-small service">
+                <section class="box style2">
+                    {% if service.image %}<span class="image featured"><img src="{{ service.image | relative_url }}" alt="" /></span>{% endif %}
+                    <h3>{{ service.name }}</h3>
+                    <p>{{ service.description }}</p>
+                    <div class="extra">
+                        {% if service.benefits %}
+                        <p><strong>Beneficios</strong>: {{ service.benefits }}</p>
+                        {% endif %}
+                        {% if service.best_for %}
+                        <p><strong>Ideal para</strong>: {{ service.best_for }}</p>
+                        {% endif %}
+                        {% if service.companies %}
+                        <p><strong>Compañías:</strong></p>
+                        <p>
+                            {% for company_name in service.companies %}
+                            {% assign company = site.data.companies | where: "name", company_name | first %}
+                            {% if company and company.image %}
+                            <a href="{{ company.url }}" target="_blank"><img src="{{ company.image | relative_url }}" alt="{{ company.name }}" height="60" /></a>
+                            {% endif %}
+                            {% endfor %}
+                        </p>
+                        {% endif %}
+                    </div>
+                </section>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</article>
+
+<!-- Who am I -->
+<article id="quien-soy" class="wrapper style3">
+    <div class="container">
+        <div class="row">
+            <div class="col-6 col-12-small">
+                <header>
+                    <h2>¿Quien soy?</h2>
+                    <p>{{ site.data.profile.bio }}</p>
+                </header>
+            </div>
+            <div class="col-6 col-12-small">
+                <h2>Blog</h2>
+                <ul class="blog-list">
+                {% for post in site.posts limit:2 %}
+                <li>
+                    <span class="date">{{ post.date | date: "%d/%m/%Y" }}</span>
+                    <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+                    {{ post.excerpt | strip_html }}
+                </li>
+                {% endfor %}
+                <ul>
+            </div>
+        </div>
+    </div>
+</article>

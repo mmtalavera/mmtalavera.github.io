@@ -1,0 +1,25 @@
+---
+layout: layout
+---
+
+<!-- Home -->
+<article id="top" class="wrapper style1">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<span>{{ page.date | date: "%d/%m/%Y" }}</span>
+				<header>
+					<h1 class="name">{{ page.title }}</h1>
+				</header>
+				<p>Por
+					{% if page.author %}
+					<strong>{{ page.author }}</strong><br />{{ page.position }}
+					{% else %}
+					<strong>{{ site.data.profile.name }}</strong><br />{{ site.data.profile.position }}
+					{% endif %}
+				</p>
+				{{ page.content }}
+			</div>
+		</div>
+	</div>
+</article>
