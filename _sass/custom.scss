@@ -24,3 +24,13 @@ h1.name {
         }
     }
 }
+
+.blog-list {
+    list-style: none;
+    text-align: left;
+    li:last-child {
+        border-bottom: 1px solid #e0e0e0;
+        padding-bottom: 1em;
+        margin-bottom: 1em;
+    }
+}

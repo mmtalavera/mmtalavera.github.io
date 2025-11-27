@@ -1,0 +1,29 @@
+---
+layout: layout
+title: "Blog"
+---
+
+<!-- Blog -->
+<article id="top" class="wrapper style1">
+    <div class="container">
+        <header>
+            <h2>Blog</h2>
+            <p>Artículos sobre seguros, protección y tranquilidad para ti y tu familia.</p>
+        </header>
+        <div class="row">
+            <div class="col-12">
+                <ul class="blog-list">
+                {% for post in site.posts %}
+                <li>
+                    <span class="date">{{ post.date | date: "%d/%m/%Y" }}</span>
+                    <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+                    <p>{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
+                    <a href="{{ post.url | relative_url }}" class="button small">Leer más</a>
+                </li>
+                {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</article>
+
