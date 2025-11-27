@@ -60,6 +60,7 @@ layout: layout
 </article>
 
 <!-- Who am I -->
+<article id="blog"></article>
 <article id="quien-soy" class="wrapper style3">
     <div class="container">
         <div class="row">
@@ -79,7 +80,8 @@ layout: layout
                     {{ post.excerpt | strip_html }}
                 </li>
                 {% endfor %}
-                <ul>
+                </ul>
+                <p><a href="{{ '/blog' | relative_url }}" class="button">Ver todos los artículos</a></p>
             </div>
         </div>
     </div>
