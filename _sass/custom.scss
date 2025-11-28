@@ -34,3 +34,19 @@ h1.name {
         margin-bottom: 1em;
     }
 }
+
+h1 {
+    font-size: 3em;
+}
+
+#top {
+    &, p {
+        font-size: 1em;
+    }
+}
+
+#contacto {
+    footer {
+        font-size: 0.9em;
+    }
+}
