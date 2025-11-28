@@ -40,3 +40,6 @@ future: false
 show_drafts: false
 
 excerpt_separator: <!--more-->
+
+google:
+  analytics: G-8M5HJP72G8
