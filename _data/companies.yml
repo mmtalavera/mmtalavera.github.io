@@ -1,18 +1,18 @@
 - name: BMI
   image: assets/images/companies/bmi.png
-  url: https://www.bmi.com.ar
+  url: https://www.bmicos.com/internacional/
 - name: American Fidelity
   image: assets/images/companies/american-fidelity.png
-  url: https://www.americanfidelity.com.ar
+  url: https://afiltd.com
 - name: Olé
   image: assets/images/companies/ole.png
-  url: https://www.ole.com.ar
+  url: https://olelife.com/
 - name: Investor Trust
   image: assets/images/companies/investor-trust.png
-  url: https://www.investortrust.com.ar
+  url: https://www.investors-trust.com
 - name: Morgan White
   image: assets/images/companies/morgan-white.png
-  url: https://www.morganwhite.com.ar
+  url: https://morganwhiteintl.com
 - name: Ever
   image:
-  url: https://www.ever.com.ar
+  url: https://everinsuranceglobal.com
