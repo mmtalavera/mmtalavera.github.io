@@ -20,6 +20,8 @@ Pero hay otras que seguimos dejando para después. Los seguros suelen ser una de
 
 Porque asegurarte significa aceptar algo incómodo: **no tenemos control sobre todo lo que puede pasar.**
 
+<!--more-->
+
 Pensar en un seguro nos obliga a considerar enfermedades, accidentes, incapacidad, pérdida de ingresos e incluso la muerte. Y es mucho más fácil pensar: *“Eso probablemente no me va a pasar a mí.”*
 
 También existe otra razón: sentimos que estamos pagando por algo que quizá nunca utilizaremos.
